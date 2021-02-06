@@ -5,7 +5,8 @@
     <title>Weather App</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"> <!-- shrink-to-fit=no made yes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!-- shrink-to-fit=no made yes-->
     <link rel="stylesheet" href="style.css">
 
 
@@ -26,12 +27,13 @@
     <div class="container">
         <form id="div-form" class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                
-                    <input id="input-place-name" type="text" class="rounded form-control"
-                        placeholder="Enter a location for Weather ...">
-                
+
+                <input id="input-place-name" type="text" class="rounded form-control"
+                    placeholder="Enter a location for Weather ...">
+
                 <div class="input-group-append">
-                    <button onclick="getWeather()" id="searchButton" type="button" class="btn btn-danger mx-2">Search</button>
+                    <button onclick="getWeather()" id="searchButton" type="button"
+                        class="btn btn-danger mx-2">Search</button>
                 </div>
             </div>
         </form>
@@ -40,11 +42,13 @@
             <h1 id="place-name">Dhaka</h1>
             <h3>Temperature: <span id="newTemp">25.06</span>&deg;C</h3>
             <h5>Feels Like: <span id="tempFeels">20.00</span>&deg;C</h5>
-            <h5 class = "lead" >Humidity: <span id="humidityNow">38.06</span>%</h5>
+            <h5 class="lead">Humidity: <span id="humidityNow">38.06</span>%</h5>
             <h1 id="weatherMain" class="lead">Clouds</h1>
         </div>
     </div>
 
+
+    <!-- Modal -->
     <dialog id="dialog">
         <div id="dialogue-message">
             <h3>Error Message</h3>
@@ -54,14 +58,14 @@
             </div>
             <br>
             <div class="button-inline">
-                <button onclick="window.dialog.close(); location.reload();" class="btn-style">Close</button>
+                <button onclick="window.dialog.close(); location.reload();" class="btn btn-success">Close</button>
             </div>
         </div>
     </dialog>
 
 
-<script src="myscript.js"></script>
-<!-- <script src="myscript2.js"></script> -->
+    <script src="myscript.js"></script>
+   
 </body>
 
 </html>

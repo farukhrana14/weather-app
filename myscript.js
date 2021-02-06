@@ -65,7 +65,8 @@ function titleCase(str) {
 
 function errorMessage(){
     window.dialog.showModal();
-
+   
+    
 }
 
 
