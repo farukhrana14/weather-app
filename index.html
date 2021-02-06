@@ -38,14 +38,30 @@
         <div class="weather-status text-white text-center">
             <img id="weather-image" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
             <h1 id="place-name">Dhaka</h1>
-            <h3>Temperature: <span id="newTemp">38.06</span>&deg;C</h3>
-            <h5>Feels Like: <span id="tempFeels">38.06</span>&deg;C</h5>
+            <h3>Temperature: <span id="newTemp">25.06</span>&deg;C</h3>
+            <h5>Feels Like: <span id="tempFeels">20.00</span>&deg;C</h5>
             <h5 class = "lead" >Humidity: <span id="humidityNow">38.06</span>%</h5>
-
             <h1 id="weatherMain" class="lead">Clouds</h1>
         </div>
     </div>
+
+    <dialog id="dialog">
+        <div id="dialogue-message">
+            <h3>Error Message</h3>
+            <br>
+            <div class="message">
+                <p> Please check the city name. </p>
+            </div>
+            <br>
+            <div class="button-inline">
+                <button onclick="window.dialog.close(); location.reload();" class="btn-style">Close</button>
+            </div>
+        </div>
+    </dialog>
+
+
 <script src="myscript.js"></script>
+<!-- <script src="myscript2.js"></script> -->
 </body>
 
 </html>

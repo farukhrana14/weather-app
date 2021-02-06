@@ -1,0 +1,18 @@
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  #dialog{
+      margin: 300px auto;
+      width: 700px;
+      padding: 20px;
+      border: 2px solid red;
+      background-color:tomato;
+      border-radius: 10px;
+      color: white;
+  }
+
+  .button-inline{
+    display: inline-flex;
+    float:right;
+}
