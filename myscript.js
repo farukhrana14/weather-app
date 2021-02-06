@@ -7,22 +7,25 @@ function getWeather() {
     fetch(url)
         .then(res => res.json())
         .then(data => {
-
-            //temperature properties
+            //get temperature properties
             const tempData = data.main;
             const humidity = tempData.humidity;
             const feelsLike = tempData.feels_like;
             const tempNow = tempData.temp;
 
-            //weather properties
+            //get weather properties
             const weather = data.weather[0];
             const weatherMain = weather.main;
-            const wetherIcon = weather.icon;
+            const icon = weather.icon;
+            
+            //push data to UI
+            document.getElementById("weather-image").src = `https://openweathermap.org/img/wn/${icon}@2x.png`
             document.getElementById("place-name").innerText = placeName;
             document.getElementById("newTemp").innerText = tempNow;
             document.getElementById("tempFeels").innerText = feelsLike;
             document.getElementById("humidityNow").innerText = humidity;
             document.getElementById("weatherMain").innerText = weatherMain;
+
         });
 
 document.getElementById("input-place-name").value = "";
