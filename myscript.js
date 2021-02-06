@@ -1,3 +1,13 @@
+//Use Enter Key beside search button
+document.querySelector("#input-place-name").addEventListener("keypress", event => {
+    if(event.key !== "Enter") return; // Use `.key` instead.
+    document.querySelector("#searchButton").click(); // Things you want to do.
+    event.preventDefault(); // No need to `return false;`.
+});
+
+
+
+// get weather data and push to UI upon click
 function getWeather() {
     const placeName0 = document.getElementById("input-place-name").value;
     const placeName = titleCase(placeName0);
