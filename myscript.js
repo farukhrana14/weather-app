@@ -15,8 +15,7 @@ function getWeather() {
     const placeName0 = document.getElementById("input-place-name").value;
     const placeName = titleCase(placeName0);
 
-    console.log('CONFIG:', api.KEY);
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=${api.Key}&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=${API_KEY}&units=metric`
                                                                                       
     fetch(url)
         .then((response) => {
