@@ -71,5 +71,5 @@ function errorMessage(){
 }
 
 
-// api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=404bfe6ded5f4cb18bbfda11b56929b5
+
 // Image url for icon 10d = URL is http://openweathermap.org/img/wn/10d@2x.png
