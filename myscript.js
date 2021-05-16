@@ -1,6 +1,4 @@
 
-// require('dotenv').config();
-
 //Use Enter Key beside search button
 document.querySelector("#input-place-name").addEventListener("keypress", event => {
     if(event.key !== "Enter") return; // Use `.key` instead.
