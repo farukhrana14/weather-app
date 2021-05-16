@@ -1,5 +1,5 @@
 
-require('dotenv').config();
+// require('dotenv').config();
 
 //Use Enter Key beside search button
 document.querySelector("#input-place-name").addEventListener("keypress", event => {
@@ -15,8 +15,9 @@ function getWeather() {
     const placeName0 = document.getElementById("input-place-name").value;
     const placeName = titleCase(placeName0);
 
-
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=`${process.env.API_KEY}`&units=metric"
+    console.log('CONFIG:', api.KEY);
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=${api.Key}&units=metric`
+                                                                                      
     fetch(url)
         .then((response) => {
             if (response.status !== 200) {
