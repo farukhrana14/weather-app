@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 
 //Use Enter Key beside search button
@@ -15,7 +16,7 @@ function getWeather() {
     const placeName = titleCase(placeName0);
 
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=`${API_KEY}`&units=metric"
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=`${process.env.API_KEY}`&units=metric"
     fetch(url)
         .then((response) => {
             if (response.status !== 200) {
